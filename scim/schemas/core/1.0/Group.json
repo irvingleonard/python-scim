@@ -1,0 +1,37 @@
+{
+	"name":"Group",
+	"description":"Group resources are meant to enable expression of common Group or role based access control models, although no explicit authorization model is defined. It is intended that the semantics of group membership and any behavior or authorization granted as a result of membership are defined by the Service Provider are considered out of scope for this specification.",
+	"attributes":[
+		{
+			"name":"displayName",
+			"type":"string",
+			"multiValued":false,
+			"description":"A human readable name for the Group.",
+			"readOnly":false,
+			"required":true,
+			"caseExact":false
+		},
+		{
+			"name":"members",
+			"type":"complex",
+			"multiValued":true,
+			"multiValuedAttributeChildName":"member",
+			"description":"A list of members of the Group.",
+			"readOnly":false,
+			"required":false,
+			"caseExact":false,
+			"subAttributes":[
+				{
+					"name":"type",
+					"type":"string",
+					"multiValued":false,
+					"description":"The value must be the \"id\" of a SCIM resource, either a User, or a Group",
+					"readOnly":true,
+					"required":false,
+					"caseExact":false,
+					"canonicalValues":["User", "Group"]
+				}
+			]
+		}
+	]
+}
