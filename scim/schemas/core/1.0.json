@@ -110,7 +110,7 @@
 			"description":"The operation to perform on the multi-valued attribute during a PATCH request. The only valid value is \"delete\", which signifies that this instance should be removed from the Resource.",
 			"readOnly":false,
 			"required":false,
-			"caseExact":false
+			"caseExact":false,
 			"canonicalValues":["delete"]
 		},
 		{
@@ -119,7 +119,7 @@
 			"multiValued":false,
 			"description":"The attribute's significant value; e.g., the e-mail address, phone number, etc.",
 			"readOnly":false,
-			"required":false,
+			"required":true,
 			"caseExact":false
 		}
 	]

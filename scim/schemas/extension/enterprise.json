@@ -1,0 +1,88 @@
+{
+	"1.0":{
+		"name":"urn:scim:schemas:extension:enterprise:1.0",
+		"type":"complex",
+		"multiValued":true,
+		"description":"The following SCIM extension defines attributes commonly used in representing users that belong to, or act on behalf of a business or enterprise.",
+		"readOnly":false,
+		"required":false,
+		"caseExact":false,
+		"schema":"urn:scim:schemas:extension:enterprise:1.0",
+		"subAttributes":[
+			{
+				"name":"employeeNumber",
+				"type":"string",
+				"multiValued":false,
+				"description":"Numeric or alphanumeric identifier assigned to a person, typically based on order of hire or association with an organization.",
+				"readOnly":false,
+				"required":false,
+				"caseExact":false
+			},
+			{
+				"name":"costCenter",
+				"type":"string",
+				"multiValued":false,
+				"description":"Identifies the name of a cost center.",
+				"readOnly":false,
+				"required":false,
+				"caseExact":false
+			},
+			{
+				"name":"organization",
+				"type":"string",
+				"multiValued":false,
+				"description":"Identifies the name of an organization.",
+				"readOnly":false,
+				"required":false,
+				"caseExact":false
+			},
+			{
+				"name":"division",
+				"type":"string",
+				"multiValued":false,
+				"description":"Identifies the name of a division.",
+				"readOnly":false,
+				"required":false,
+				"caseExact":false
+			},
+			{
+				"name":"department",
+				"type":"string",
+				"multiValued":false,
+				"description":"Identifies the name of a department.",
+				"readOnly":false,
+				"required":false,
+				"caseExact":false
+			},
+			{
+				"name":"manager",
+				"type":"complex",
+				"multiValued":false,
+				"description":"Numeric or alphanumeric identifier assigned to a person, typically based on order of hire or association with an organization.",
+				"readOnly":false,
+				"required":false,
+				"caseExact":false,
+				"subAttributes":[
+					{
+						"name":"managerId",
+						"type":"string",
+						"multiValued":false,
+						"description":"The id of the SCIM resource representing the User's manager.",
+						"readOnly":false,
+						"required":true,
+						"caseExact":false
+					},
+					{
+						"name":"displayName",
+						"type":"string",
+						"multiValued":false,
+						"description":"Identifies the name of a department.",
+						"readOnly":true,
+						"required":false,
+						"caseExact":false
+					}
+				]
+			}
+		]
+	}
+}

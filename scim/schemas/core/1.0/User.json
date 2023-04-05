@@ -96,7 +96,7 @@
 			"name":"title",
 			"type":"string",
 			"multiValued":false,
-			"description":"The user’s title, such as “Vice President.”",
+			"description":"The user’s title, such as \"Vice President.\"",
 			"readOnly":false,
 			"required":false,
 			"caseExact":false
@@ -105,7 +105,7 @@
 			"name":"userType",
 			"type":"string",
 			"multiValued":false,
-			"description":"Used to identify the organization to user relationship. Typical values used might be \"Contractor\", \"Employee\", \"Intern\", \"Temp\", \"External\", and \"\Unknown\" but any value may be used.",
+			"description":"Used to identify the organization to user relationship. Typical values used might be \"Contractor\", \"Employee\", \"Intern\", \"Temp\", \"External\", and \"Unknown\" but any value may be used.",
 			"readOnly":false,
 			"required":false,
 			"caseExact":false
